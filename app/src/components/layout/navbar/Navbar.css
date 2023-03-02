@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+input, textarea, select {
+  outline: 0;
+  border: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+/* custom utility classes */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* flexbox and grid */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.d-flex2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* height and width */
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* text align and transformation */
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: left;
+}
+.text-end {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-regal-blue {
+  color: #103755;
+}
+.text-gold {
+  color: #eeb808;
+}
+.text-light-blue {
+  color: #707b8e;
+}
+.text-pine-green {
+  color: #63766b;
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+.text-ghost-white {
+  color: #f8f8fa;
+}
+.text-red {
+  color: #e98582;
+}
+
+.bg-regal-blue {
+  background-color: #103755;
+}
+.bg-gold {
+  background-color: #eeb808;
+}
+.bg-light-blue {
+  background-color: #707b8e;
+}
+.bg-pine-green {
+  background-color: #63766b;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-black {
+  background-color: #000;
+}
+.bg-ghost-white {
+  background-color: #f8f8fa;
+}
+.bg-dark {
+  background-color: #212529;
+}
+
+/* font weights */
+.fw-1 {
+  font-weight: 100;
+}
+.fw-2 {
+  font-weight: 200;
+}
+.fw-3 {
+  font-weight: 300;
+}
+.fw-4 {
+  font-weight: 400;
+}
+.fw-5 {
+  font-weight: 500;
+}
+.fw-6 {
+  font-weight: 600;
+}
+.fw-7 {
+  font-weight: 700;
+}
+.fw-8 {
+  font-weight: 800;
+}
+.fw-9 {
+  font-weight: 900;
+}
+
+/* common font sizes */
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-17 {
+  font-size: 17px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-19 {
+  font-size: 19px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-21 {
+  font-size: 21px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-23 {
+  font-size: 23px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-25 {
+  font-size: 25px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+
+/* letter spacing */
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+/* margin and padding */
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.py-5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* animation and transition stopper */
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.section-title {
+  padding: 16px 0;
+}
+.section-title * {
+  font-size: 26px;
+}
+
+.breadcrumb {
+  padding: 12px 0;
+  color: #707b8e;
+}
+.breadcrumb-separator {
+  margin: 0 8px;
+}
+
+.btn-danger, .btn-secondary, .btn-primary {
+  padding: 8px 14px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: all 300ms linear;
+}
+.btn-danger .btn-icon, .btn-secondary .btn-icon, .btn-primary .btn-icon {
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background-color: #103755;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #0b263b;
+}
+
+.btn-secondary {
+  background-color: #eeb808;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #d0a107;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #e98582;
+  padding: 3px 14px;
+  border-radius: 4px;
+}
+.btn-danger:hover {
+  background-color: #e46c68;
+}
+
+.btn-square {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.btn-square-icon {
+  font-size: 14px;
+  color: #103755;
+  transition: all 300ms linear;
+}
+.btn-square-icon:hover {
+  color: #eeb808;
+}
+
+.navbar {
+  padding: 16px 0 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
+.navbar-search {
+  align-items: stretch;
+}
+.navbar-search input {
+  width: 100%;
+  border: 0.5px solid rgba(0, 0, 0, 0.05);
+  color: #707b8e;
+  height: 44px;
+  padding: 0 10px;
+  border-radius: 3px 0 0 3px;
+}
+.navbar-search .navbar-search-btn {
+  width: 60px;
+  height: 44px;
+  border-radius: 0 3px 3px 0;
+  background-color: #eeb808;
+  color: #fff;
+  transition: all 300ms linear;
+}
+.navbar-search .navbar-search-btn:hover {
+  background-color: #103755;
+}
+.navbar-btns .add-to-cart-btn {
+  margin-right: 28px;
+  color: #63766b;
+}
+.navbar-btns .add-to-cart-btn .btn-icon {
+  margin-right: 10px;
+}
+.navbar-btns .add-to-cart-btn .btn-icon i {
+  font-size: 3rem;
+}
+.navbar-btns .add-to-cart-btn .btn-txt {
+  position: relative;
+}
+.navbar-btns .add-to-cart-btn .btn-txt .cart-count-value {
+  position: absolute;
+  top: -10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeb808;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.8;
+  font-weight: 500;
+}
+.navbar .navbar-bottom {
+  padding: 10px 0;
+  margin-top: 14px;
+}
+.navbar .navbar-bottom > .container {
+  justify-content: flex-end;
+}
+.navbar .navbar-bottom .nav-links li {
+  margin: 0 10px;
+}
+.navbar .navbar-bottom .nav-links .nav-link {
+  font-size: 14.5px;
+  transition: all 300ms linear;
+}
+.navbar .navbar-bottom .nav-links .nav-link:hover {
+  opacity: 0.8;
+}
+.navbar .navbar-bottom .navbar-show-btn {
+  transition: all 300ms linear;
+  display: none;
+}
+.navbar .navbar-bottom .navbar-show-btn:hover {
+  color: #fff;
+}
+.navbar .navbar-bottom .navbar-hide-btn {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .navbar .nav-links .nav-link {
+    font-size: 13px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-left: 16px;
+    transform: translateX(100%);
+    transition: all 300ms linear;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .navbar .nav-links li {
+    margin-bottom: 10px !important;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+  }
+  .navbar .nav-links li .nav-link {
+    color: #103755;
+    font-size: 14px !important;
+  }
+  .navbar .show-nav-links {
+    transform: translateX(0);
+  }
+  .navbar .navbar-show-btn {
+    display: block !important;
+  }
+  .navbar .navbar-hide-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-top .navbar-search {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
