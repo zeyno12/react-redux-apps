@@ -32,7 +32,7 @@ const Homepage = () => {
   }, []);
   return (
     <div className="home-page">
-      <Slider slides={SliderData} />
+      {/* <Slider slides={SliderData} /> */}
       <Category categories={categories} status={categoryStatus} />
       <ProductList products={products} status={productStatus} />
       {/* category one product */}
